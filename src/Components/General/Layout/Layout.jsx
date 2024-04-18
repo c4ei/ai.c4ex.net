@@ -15,6 +15,29 @@ import LovelaceAnimation from '../LovelaceAnimation';
 import './Layout.css';
 import ScrollProgress from '../ScrollProgress';
 
+import { createThirdwebClient } from "thirdweb";
+import { ThirdwebProvider, ConnectButton, } from "thirdweb/react";
+import { createWallet, walletConnect, inAppWallet, } from "thirdweb/wallets";
+
+const client = createThirdwebClient({ clientId: "eeb3d342712c612e1baf981a1073f59e", });
+
+const wallets = [
+    createWallet("io.metamask"),
+    createWallet("com.coinbase.wallet"),
+    walletConnect(),
+    inAppWallet({
+      auth: {
+        options: [
+          "email",
+          "google",
+          "apple",
+          "facebook",
+          "phone",
+        ],
+      },
+    }),
+  ];
+  
 const Layout = () => {
     const [GetIsMenuActive, SetIsMenuActive] = useState(false);
     const { Width } = UseWindowSize();
@@ -96,6 +119,16 @@ const Layout = () => {
                     </Tooltip>
                     {(Width > 768) && <LanguageSelect />}
                 </article>
+                
+                <ThirdwebProvider style="margin-top:5px">
+                    <ConnectButton
+                    client={client}
+                    wallets={wallets}
+                    theme={"dark"}
+                    connectModal={{ size: "wide" }}
+                    />
+                </ThirdwebProvider>
+
             </header>
             
             <Fade clear>
