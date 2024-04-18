@@ -1,0 +1,45 @@
+
+
+#Home-Page-Main{
+    display: flex;
+    gap: 1rem;
+    height: 100vh;
+    position: relative;
+}
+
+#Home-Page-Main #Chat-Box{
+    width: calc(100% - 300px);
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+#Chat-Viewer-Box[data-isloading='true'] #Chat-Input-Box,
+#Chat-Side-Menu-Box[data-isloading='true'] #Software-Info-Box .Button,
+#Chat-Viewer-Box[data-isloading='true'] .Suggestion-Box,
+#Chat-Viewer-Box[data-isLoading='true'] .Suggestion-Box .Suggestion,
+#Chat-Side-Menu-Box[data-isloading='true'] .Option-Group[data-disableonloading='true'],
+#Chat-Side-Menu-Box[data-isloading='true'] .Option-Group[data-disableonloading='true'] .Option-Box,
+#Chat-Side-Menu-Box[data-isloading='true'] .Option-Group[data-disableonloading='true'] .Stored-Chat-Response-List-Title,
+#Chat-Side-Menu-Box[data-isloading='true'] .Option-Group[data-disableonloading='true'] .Stored-Chat-Response-List-Item-Title{
+    cursor: default !important;
+    opacity: .8;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px){
+    #Home-Page-Main{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #Home-Page-Main #Chat-Box{
+        width: 100%;
+        min-height: 98%;
+        margin-top: 3rem;
+    }
+
+    #Chat-Viewer-Box[data-isloading='true'] #Chat-Input-Box{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,38 @@
+
+
+#Mobile-Options-Box{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: calc(100% - 2rem);
+    background-color: #000000;
+}
+
+#Mobile-Options-Box .Button{
+    padding: .4rem 1rem;
+    text-align: start;
+    font-size: .65rem;
+    overflow: hidden;
+}
+
+.hidingHeader{
+    --hidingHeader-animation-offset: 60px !important;
+    position: absolute !important;
+    top: 0;
+}
+
+#Mobile-Options-Box .Button span{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @supports (-webkit-line-clamp: 1){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: initial;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+}

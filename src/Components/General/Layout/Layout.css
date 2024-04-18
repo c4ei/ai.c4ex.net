@@ -1,0 +1,135 @@
+
+
+#Header #Brand-Box #Brand-Title{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    will-change: transform;
+}
+
+#Header #Brand-Box #Brand-Title:hover{
+    opacity: .9;
+}
+
+#Header{
+    padding: 1rem;
+    display: flex;
+    z-index: 200;
+    background-color: #121212;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#Header #Navegation-Box{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#Header[data-path='/'] #Navegation-Box{
+    margin-top: 1rem;
+    background-color: transparent;
+}
+
+#Header[data-path='/']{
+    width: auto;
+    flex-direction: column;
+}
+
+#Header #Navegation-Box .Navegation-Item-Link{
+    padding: .2rem 1rem;
+    font-size: .8rem;
+}
+
+.Mobile-Menu-Content-Item-Box{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.Mobile-Menu-Content-Item-Box:hover{
+    opacity: .85;
+}
+
+#Mobile-Menu-Navegation-Box{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    height: 100%;
+}
+
+#Mobile-Menu-External-References-Box{
+    padding: 2rem 0;
+    overflow-x: scroll;
+    display: flex;
+    gap: 1rem;
+}
+
+#Mobile-Menu-External-References-Box .Button{
+    padding: .5rem 1rem;
+}
+
+#Mobile-Menu-Content-Box{
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+#Mobile-Menu-Box{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+@media screen and (max-width: 768px){
+    #Header #Brand-Box #Brand-Title{
+        font-size: .95rem;
+    }
+
+    #Mobile-Menu-Box{
+        height: calc(100% - 60px);
+    }
+
+    #Header[data-path='/'] #Navegation-Box{
+        margin-top: 0;
+    }
+
+    #Header{
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        background-color: #000000;
+    }
+
+
+    #Header[data-path='/']{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #Header #Navegation-Box .Navegation-Item-Link{
+        font-size: .6rem;
+    }
+
+    #Header #Navegation-Box{
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+}

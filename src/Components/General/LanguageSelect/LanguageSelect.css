@@ -1,0 +1,40 @@
+
+
+#Language-Select-Box{
+    margin: 0;
+    width: auto;
+}
+
+#Language-Select-Box .MuiOutlinedInput-root{
+    border-radius: 0;
+    font-size: .8rem;
+}
+
+#Language-Select-Box .MuiInputBase-input{
+    padding: 4.5px 32px 4.5px 14px !important;
+}
+
+#Language-Select-Box .MuiOutlinedInput-notchedOutline{
+    border-color: #FFFFFF;
+}
+
+#Language-Select-Box .MuiInputLabel-root,
+#Language-Select-Box .MuiSvgIcon-root,
+#Language-Select-Box .MuiOutlinedInput-root{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px){
+    #Language-Select-Paper-Box{
+        min-width: 50px !important;
+        width: 50px !important;
+    }
+
+    #Language-Select-Box .MuiInputBase-input{
+        padding: 3.5px 32px 3.5px 14px !important;
+    }
+
+    #Language-Select-Paper-Box .MuiMenuItem-root{
+        font-size: .5rem;
+    }
+}

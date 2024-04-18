@@ -1,0 +1,12 @@
+
+
+#Scroll-Progress-Box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 250;
+    background-color: #FFFFFF;
+    transform-origin: 0%;
+}
