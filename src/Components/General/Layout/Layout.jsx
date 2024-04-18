@@ -27,8 +27,8 @@ const Layout = () => {
     useEffect(() => {
         const Method = (UserExperience.GetIsSettingsMenuActive 
             || UserExperience.GetIsMobileActivityMenuActive) ? ('add') : ('remove');
-        document.querySelector('#AiC4EI-ROOT header')?.classList?.[Method]('Blurred-Box');
-        document.querySelector('#AiC4EI-ROOT main')?.classList?.[Method]('Blurred-Box');
+        document.querySelector('#AiAAH-ROOT header')?.classList?.[Method]('Blurred-Box');
+        document.querySelector('#AiAAH-ROOT main')?.classList?.[Method]('Blurred-Box');
     }, [UserExperience.GetIsSettingsMenuActive, UserExperience.GetIsMobileActivityMenuActive]);
 
     useEffect(() => {

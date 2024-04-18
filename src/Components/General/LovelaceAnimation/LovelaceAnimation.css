@@ -1,6 +1,6 @@
 
 
-#AiC4EI-Animation-Box{
+#AiAAH-Animation-Box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,24 +15,24 @@
     z-index: 50;
 }
 
-#AiC4EI-Animation-Box .Title{
+#AiAAH-Animation-Box .Title{
     font-weight: 200;
     font-size: 2.7rem;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
 }
 
-#AiC4EI-Animation-Box .Title .Letter{
+#AiAAH-Animation-Box .Title .Letter{
     display: inline-block;
     line-height: 1rem;
 }
 
 @media screen and (max-width: 768px){
-    #AiC4EI-Animation-Box .Title{
+    #AiAAH-Animation-Box .Title{
         letter-spacing: 0.4rem;
     }
 
-    #AiC4EI-Animation-Box .Title{
+    #AiAAH-Animation-Box .Title{
         font-size: 1.8rem;
     }
 }

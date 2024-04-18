@@ -4,7 +4,7 @@ import Locales from '../../Locale';
 import { QuickLocalStorageRescue } from '../../Utilities/Runtime';
 
 export const LocalStorageIdentifier = {
-    Settings: 'AiC4EI::Service::Core::Settings'
+    Settings: 'AiAAH::Service::Core::Settings'
 };
 
 export const ClientLanguage = navigator.language.split('-')[0].toUpperCase();

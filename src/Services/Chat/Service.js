@@ -3,8 +3,8 @@
 import { QuickLocalStorageRescue, StandardizedAPIRequestBuilder } from '../../Utilities/Runtime';
 export const ChatAPI = new StandardizedAPIRequestBuilder({ Endpoint: '/chat' });
 export const LocalStorageIdentifier = {
-    Settings: 'AiC4EI::Service::Chat::Settings',
-    Historial: 'AiC4EI::Service::History'
+    Settings: 'AiAAH::Service::Chat::Settings',
+    Historial: 'AiAAH::Service::History'
 };
 
 export const RecommendedProviders = { WS: 'Automatic', API: 'Automatic' };

@@ -159,8 +159,8 @@ const LovelaceAnimation = () => {
     return (
         <React.Fragment>
             <canvas ref={CanvasReference} id='Firework-Canvas' />
-            <aside id='AiC4EI-Animation-Box'>
-                <h3 className='Title' ref={LovelaceTitleReference}>AiC4EI AI</h3>
+            <aside id='AiAAH-Animation-Box'>
+                <h3 className='Title' ref={LovelaceTitleReference}>AAH AI</h3>
             </aside>
         </React.Fragment>
     );

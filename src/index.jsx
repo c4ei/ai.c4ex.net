@@ -14,7 +14,7 @@ const EvergreenTheme = MergeObjectValues(EvergreenUI.defaultTheme, {
     colors: { blue500: '#FFFFFF' }
 });
 
-ReactDOM.createRoot(document.getElementById('AiC4EI-ROOT')).render(
+ReactDOM.createRoot(document.getElementById('AiAAH-ROOT')).render(
     <MultiProvider
         providers={[
             <BrowserRouter />,
